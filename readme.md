@@ -22,6 +22,7 @@ conda install keras
 
 pipとcondaでgym本体と動画生成に必要なモジュールを入れる
 pipとcondaを一緒に使うのは芳しくないけどpyenvなりconda envなりで作った使い捨て環境なので何も問題はない。
+
 ```
 pip install gym && pip install JSAnimetion && pip uninstall pyglet -y && pip install pyglet==1.2.4
 ```
@@ -29,11 +30,10 @@ pip install gym && pip install JSAnimetion && pip uninstall pyglet -y && pip ins
 ```
 conda install -c conda-forge ffmpeg
 ```
-
+### macの環境も整える
 ```
 brew install cmake boost boost-python sdl2 swig wget
 ```
-でmacの環境も整える
 
 もうちょっとスマートにまともなやり方もあるけど面倒くさいしとりあえず現状問題ないのでこれで
 なにか問題発生したら調整します
