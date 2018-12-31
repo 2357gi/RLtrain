@@ -7,6 +7,7 @@
 体系的な知識を身につける
 
 ## 環境
+### pythonを用意
 pyenvでanacondaをインストールし、ディレクトリにlocalで反映
 
 `requirements.txt`に出力してるけどanacondaに任せたほうがいい
@@ -16,6 +17,18 @@ anaconda3-5.0.0を何らかの手段で用意して
 conda install keras
 ```
 で互換ライブラリもいい感じにアップデートしてくれるのでいい感じになる
+
+### openAI gym環境構築
+
+pipとcondaでgym本体と動画生成に必要なモジュールを入れる
+pipとcondaを一緒に使うのは芳しくないけどpyenvなりconda envなりで作った使い捨て環境なので何も問題はない。
+```
+pip install gym && pip install JSAnimetion && pip uninstall pyglet -y && pip install pyglet==1.2.4
+```
+
+```
+conda install -c conda-forge ffmpeg
+```
 
 ```
 brew install cmake boost boost-python sdl2 swig wget
