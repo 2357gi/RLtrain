@@ -28,7 +28,7 @@ pip install gym && pip install JSAnimation && pip uninstall pyglet -y && pip ins
 ```
 
 ```
-conda install -c conda-forge ffmpeg
+conda install -c conda-forge ffmpeg -y
 ```
 ### macの環境も整える
 ```
