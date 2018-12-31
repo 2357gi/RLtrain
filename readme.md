@@ -9,7 +9,22 @@
 ## 環境
 pyenvでanacondaをインストールし、ディレクトリにlocalで反映
 
-`requirements.txt`に出力してるけどanacondaのバージョン選んで入れた方が賢い
+`requirements.txt`に出力してるけどanacondaに任せたほうがいい
+anaconda3-5.0.0を何らかの手段で用意して
+
+```
+conda install keras
+```
+で互換ライブラリもいい感じにアップデートしてくれるのでいい感じになる
+
+```
+brew install cmake boost boost-python sdl2 swig wget
+```
+でmacの環境も整える
+
+もうちょっとスマートにまともなやり方もあるけど面倒くさいしとりあえず現状問題ないのでこれで
+なにか問題発生したら調整します
+
 
 ## 余談
 docker-composeで構築するのもありだから気が向いたらそっちに映るかも
