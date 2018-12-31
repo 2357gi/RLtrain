@@ -24,7 +24,7 @@ pipとcondaでgym本体と動画生成に必要なモジュールを入れる
 pipとcondaを一緒に使うのは芳しくないけどpyenvなりconda envなりで作った使い捨て環境なので何も問題はない。
 
 ```
-pip install gym && pip install JSAnimetion && pip uninstall pyglet -y && pip install pyglet==1.2.4
+pip install gym && pip install JSAnimation && pip uninstall pyglet -y && pip install pyglet==1.2.4
 ```
 
 ```
