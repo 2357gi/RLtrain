@@ -24,11 +24,18 @@ pipとcondaでgym本体と動画生成に必要なモジュールを入れる
 pipとcondaを一緒に使うのは芳しくないけどpyenvなりconda envなりで作った使い捨て環境なので何も問題はない。
 
 ```
-pip install gym && pip install JSAnimation && pip uninstall pyglet -y && pip install pyglet==1.2.4
+pip install gym && pip install JSAnimation
 ```
 
 ```
 conda install -c conda-forge ffmpeg
+```
+
+pygletは1.2.4じゃないとgymのjupyternotebookでの描写がエラーを吐くんだけど
+conda installで引っ張られるので最後にversion指定してインストールしてあげる
+
+```
+pip uninstall pyglet -y && pip install pyglet==1.2.4
 ```
 ### macの環境も整える
 ```
