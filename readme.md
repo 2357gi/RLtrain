@@ -28,7 +28,7 @@ pip install gym && pip install JSAnimation
 ```
 
 ```
-conda install -c conda-forge ffmpeg
+conda install -c conda-forge ffmpeg -y
 ```
 
 pygletは1.2.4じゃないとgymのjupyternotebookでの描写がエラーを吐くんだけど
